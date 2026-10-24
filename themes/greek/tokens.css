@@ -1,0 +1,80 @@
+/* Greek theme tokens. Documented in themes/greek/DESIGN.md.
+   Materials: Pentelic marble, the business card's engraving grey, ink,
+   and one pigment, Egyptian blue, the painted ground of the Parthenon frieze. */
+
+.greek,
+:root[data-site-style="greek"],
+.website[data-style="greek"] {
+  /* Colour */
+  --gk-marble: #fbfbf9;
+  --gk-pentelic: #f1f0ec;
+  --gk-vein: #dad8d2;
+  --gk-vein-strong: #b5b2aa;
+  --gk-plate: #737373;
+  --gk-plate-deep: #5b5b58;
+  --gk-ink: #1c1c1a;
+  --gk-basalt: #141413;
+  --gk-frieze: #1034a6;
+  --gk-frieze-deep: #0a2477;
+  --gk-frieze-ink: #f5f7fd;
+  --gk-frieze-muted: #c0cbee;
+  --gk-frieze-line: #5a73c4;
+  --gk-cinnabar: #a3311f;
+
+  /* Type */
+  --gk-serif: "Georgia Pro", Georgia, var(--font-gelasio, "Gelasio"), serif;
+  --gk-inscription: var(--font-jost, "Jost"), Futura, "Century Gothic", sans-serif;
+  --gk-text-xs: 12px;
+  --gk-text-sm: 14px;
+  --gk-text-body: 18px;
+  --gk-text-lead: clamp(19px, 1.6vw, 22px);
+  --gk-text-h3: clamp(23px, 2vw, 27px);
+  --gk-text-h2: clamp(32px, 3.4vw, 40px);
+  --gk-text-h1: clamp(42px, 5.3vw, 61px);
+  --gk-text-display: clamp(44px, 5.6vw, 76px);
+  --gk-leading-display: 0.96;
+  --gk-leading-heading: 1.08;
+  --gk-leading-body: 1.62;
+  --gk-tracking-display: -0.025em;
+  --gk-tracking-inscription: 0.14em;
+
+  /* Space: a 3:2 progression, the same ratio as the type scale */
+  --gk-space-1: 4px;
+  --gk-space-2: 8px;
+  --gk-space-3: 12px;
+  --gk-space-4: 18px;
+  --gk-space-5: 27px;
+  --gk-space-6: 40px;
+  --gk-space-7: 60px;
+  --gk-space-8: 90px;
+  --gk-space-9: 135px;
+  --gk-section: clamp(var(--gk-space-7), 7.5vw, 112px);
+
+  /* Layout */
+  --gk-max: 1360px;
+  --gk-measure: 66ch;
+  --gk-gutter: clamp(20px, 4.4vw, 64px);
+  --gk-intercolumn: clamp(18px, 2.2vw, 30px);
+  --gk-parthenon: 4 / 9;
+
+  /* Line and form */
+  --gk-hairline: 1px solid var(--gk-vein);
+  --gk-rule: 1px solid var(--gk-ink);
+  --gk-radius: 0;
+
+  /* Motion */
+  --gk-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --gk-fast: 160ms;
+  --gk-base: 320ms;
+  --gk-burin: 1400ms;
+
+  /* Bridges for the shared site chrome (style switcher, scrollbar, body) */
+  --surface: var(--gk-marble);
+  --ink: var(--gk-ink);
+  --muted-ink: var(--gk-plate-deep);
+  --line: var(--gk-vein);
+  --spot: var(--gk-frieze);
+  --spot-ink: var(--gk-frieze-ink);
+  --panel: var(--gk-pentelic);
+  --heading-font: var(--gk-serif);
+}

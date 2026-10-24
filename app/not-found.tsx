@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { PageFrame } from "@/components/site/page-frame";
 import { brand } from "@/lib/site-content";
+import { GreekNotFound } from "@/themes/greek/pages/not-found";
+import { AthenaNotFound } from "@/themes/athena/pages";
 
 export default function NotFound() {
   return (
-    <PageFrame>
+    <PageFrame athena={<AthenaNotFound />} greek={<GreekNotFound />}>
       <section className="px-6 lg:px-12 pt-36 pb-24 max-w-[900px] mx-auto">
         <p className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground">
           {brand.name} / 404

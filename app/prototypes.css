@@ -1,0 +1,284 @@
+/* Studio-structure colour studies. Hex values are Sanzo Wada combinations
+   from the mattdesl / Dain M. Blodorn Kim dataset. Editorial and Studio
+   tokens live in designs.css and are not overridden here. */
+
+:root[data-site-style="citron"], .website[data-style="citron"] {
+  /* Combination 323: Cinnamon Buff, Citron Yellow, Madder Brown, Black.
+     Cinnamon does not contrast with citron, so it is a fill on black or madder only. */
+  --surface: #b2b73e; --ink: #111314; --muted-ink: #762c19; --line: #762c19;
+  --spot: #762c19; --spot-ink: #b2b73e; --panel: #fdc57e; --span: #762c19;
+  --heading-font: var(--font-bitter), Georgia, serif;
+  --voice-bg: #111314; --voice-ink: #b2b73e;
+  --agent-bg: #762c19; --agent-ink: #fdc57e;
+  --router-bg: #111314; --router-ink: #fdc57e;
+  --art-voice-bg: #111314; --art-voice-ink: #b2b73e;
+  --art-agent-bg: #762c19; --art-agent-ink: #fdc57e;
+  --art-router-bg: #111314; --art-router-ink: #fdc57e;
+  --band: #111314; --band-ink: #b2b73e; --band-muted: #fdc57e; --band-line: #fdc57e;
+  --band-spot: #fdc57e; --band-spot-ink: #111314;
+  --close: #762c19; --close-ink: #fdc57e; --close-muted: #b2b73e; --close-line: #b2b73e;
+  --close-spot: #b2b73e; --close-spot-ink: #762c19;
+  --card: #111314; --card-ink: #b2b73e; --card-muted: #fdc57e; --card-line: #fdc57e;
+  --card-spot: #fdc57e; --card-spot-ink: #111314;
+  --viz-bg: #111314; --viz-ink: #b2b73e; --viz-muted: #fdc57e; --viz-line: #fdc57e;
+  --viz-fill: #762c19; --viz-fill-ink: #fdc57e;
+  --viz-fill-2: #b2b73e; --viz-fill-2-ink: #111314; --viz-accent: #fdc57e;
+}
+
+:root[data-site-style="grenadine"], .website[data-style="grenadine"] {
+  /* Combination 166: Grenadine Pink, Naples Yellow, Deep Slate Green.
+     Pink and naples contrast with the green only. */
+  --surface: #112f2c; --ink: #fbe6a0; --muted-ink: #f48067; --line: #f48067;
+  --spot: #f48067; --spot-ink: #112f2c; --panel: #112f2c; --span: #f48067;
+  --heading-font: var(--font-lora), Georgia, serif;
+  --voice-bg: #f48067; --voice-ink: #112f2c;
+  --agent-bg: #fbe6a0; --agent-ink: #112f2c;
+  --router-bg: #112f2c; --router-ink: #fbe6a0;
+  --art-voice-bg: #f48067; --art-voice-ink: #112f2c;
+  --art-agent-bg: #fbe6a0; --art-agent-ink: #112f2c;
+  --art-router-bg: #112f2c; --art-router-ink: #fbe6a0;
+  --band: #fbe6a0; --band-ink: #112f2c; --band-muted: #112f2c; --band-line: #112f2c;
+  --band-spot: #112f2c; --band-spot-ink: #fbe6a0;
+  --close: #f48067; --close-ink: #112f2c; --close-muted: #112f2c; --close-line: #112f2c;
+  --close-spot: #112f2c; --close-spot-ink: #f48067;
+  --card: #fbe6a0; --card-ink: #112f2c; --card-muted: #112f2c; --card-line: #112f2c;
+  --card-spot: #112f2c; --card-spot-ink: #fbe6a0;
+  --viz-bg: #112f2c; --viz-ink: #fbe6a0; --viz-muted: #f48067; --viz-line: #f48067;
+  --viz-fill: #fbe6a0; --viz-fill-ink: #112f2c;
+  --viz-fill-2: #f48067; --viz-fill-2-ink: #112f2c; --viz-accent: #fbe6a0;
+}
+
+:root[data-site-style="tyrian"], .website[data-style="tyrian"] {
+  /* Combination 279: Raw Sienna, Vinaceous Cinnamon, Ecru, Dark Tyrian Blue.
+     Sienna clears no body pair, so it is unused. Peach and ecru contrast with the blue only. */
+  --surface: #12354e; --ink: #eea78c; --muted-ink: #c2ae93; --line: #c2ae93;
+  --spot: #eea78c; --spot-ink: #12354e; --panel: #12354e; --span: #c2ae93;
+  --heading-font: var(--font-petrona), Georgia, serif;
+  --voice-bg: #eea78c; --voice-ink: #12354e;
+  --agent-bg: #c2ae93; --agent-ink: #12354e;
+  --router-bg: #12354e; --router-ink: #eea78c;
+  --art-voice-bg: #eea78c; --art-voice-ink: #12354e;
+  --art-agent-bg: #c2ae93; --art-agent-ink: #12354e;
+  --art-router-bg: #12354e; --art-router-ink: #eea78c;
+  --band: #c2ae93; --band-ink: #12354e; --band-muted: #12354e; --band-line: #12354e;
+  --band-spot: #12354e; --band-spot-ink: #c2ae93;
+  --close: #eea78c; --close-ink: #12354e; --close-muted: #12354e; --close-line: #12354e;
+  --close-spot: #12354e; --close-spot-ink: #eea78c;
+  --card: #c2ae93; --card-ink: #12354e; --card-muted: #12354e; --card-line: #12354e;
+  --card-spot: #12354e; --card-spot-ink: #c2ae93;
+  --viz-bg: #12354e; --viz-ink: #eea78c; --viz-muted: #c2ae93; --viz-line: #c2ae93;
+  --viz-fill: #eea78c; --viz-fill-ink: #12354e;
+  --viz-fill-2: #c2ae93; --viz-fill-2-ink: #12354e; --viz-accent: #eea78c;
+}
+
+:root[data-site-style="jasper"], .website[data-style="jasper"] {
+  /* Combination 155: Jasper Red, Benzol Green, Deep Indigo.
+     Red and green share a luminance, so each sits on indigo only. */
+  --surface: #051230; --ink: #eb5324; --muted-ink: #00978d; --line: #00978d;
+  --spot: #eb5324; --spot-ink: #051230; --panel: #051230; --span: #00978d;
+  --heading-font: var(--font-sora), var(--font-instrument), sans-serif;
+  --voice-bg: #eb5324; --voice-ink: #051230;
+  --agent-bg: #00978d; --agent-ink: #051230;
+  --router-bg: #051230; --router-ink: #eb5324;
+  --art-voice-bg: #eb5324; --art-voice-ink: #051230;
+  --art-agent-bg: #00978d; --art-agent-ink: #051230;
+  --art-router-bg: #051230; --art-router-ink: #eb5324;
+  --band: #eb5324; --band-ink: #051230; --band-muted: #051230; --band-line: #051230;
+  --band-spot: #051230; --band-spot-ink: #eb5324;
+  --close: #00978d; --close-ink: #051230; --close-muted: #051230; --close-line: #051230;
+  --close-spot: #051230; --close-spot-ink: #00978d;
+  --card: #eb5324; --card-ink: #051230; --card-muted: #051230; --card-line: #051230;
+  --card-spot: #051230; --card-spot-ink: #eb5324;
+  --viz-bg: #051230; --viz-ink: #eb5324; --viz-muted: #00978d; --viz-line: #00978d;
+  --viz-fill: #eb5324; --viz-fill-ink: #051230;
+  --viz-fill-2: #00978d; --viz-fill-2-ink: #051230; --viz-accent: #eb5324;
+}
+
+:root[data-site-style="slate"], .website[data-style="slate"] {
+  /* Combination 263: Burnt Sienna, Pinkish Cinnamon, Turquoise Green, Slate Color.
+     Sienna clears no body pair, so it is unused. Cinnamon and turquoise contrast with slate only. */
+  --surface: #34454c; --ink: #b5decc; --muted-ink: #eeb480; --line: #eeb480;
+  --spot: #b5decc; --spot-ink: #34454c; --panel: #34454c; --span: #eeb480;
+  --heading-font: var(--font-albert), var(--font-instrument), sans-serif;
+  --voice-bg: #b5decc; --voice-ink: #34454c;
+  --agent-bg: #eeb480; --agent-ink: #34454c;
+  --router-bg: #34454c; --router-ink: #b5decc;
+  --art-voice-bg: #b5decc; --art-voice-ink: #34454c;
+  --art-agent-bg: #eeb480; --art-agent-ink: #34454c;
+  --art-router-bg: #34454c; --art-router-ink: #b5decc;
+  --band: #b5decc; --band-ink: #34454c; --band-muted: #34454c; --band-line: #34454c;
+  --band-spot: #34454c; --band-spot-ink: #b5decc;
+  --close: #eeb480; --close-ink: #34454c; --close-muted: #34454c; --close-line: #34454c;
+  --close-spot: #34454c; --close-spot-ink: #eeb480;
+  --card: #b5decc; --card-ink: #34454c; --card-muted: #34454c; --card-line: #34454c;
+  --card-spot: #34454c; --card-spot-ink: #b5decc;
+  --viz-bg: #34454c; --viz-ink: #b5decc; --viz-muted: #eeb480; --viz-line: #eeb480;
+  --viz-fill: #b5decc; --viz-fill-ink: #34454c;
+  --viz-fill-2: #eeb480; --viz-fill-2-ink: #34454c; --viz-accent: #b5decc;
+}
+
+.style-options { flex-wrap: wrap; justify-content: center; }
+
+/* Studio's shape, carried onto the five studies without touching Studio's own rules. */
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(h1, h2, h3) { font-weight: 500; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .site-brand { font-family: var(--heading-font); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(.action-link, .site-nav a:last-child, .style-option) { border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .stack-section { border-top: 0; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .section-intro h2 { font-size: clamp(34px, 3.3vw, 50px); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .studio-heading h1 > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .section-intro h2 > span { color: var(--span); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .module-voice { background: var(--voice-bg); color: var(--voice-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .module-agent { background: var(--agent-bg); color: var(--agent-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .module-router { background: var(--router-bg); color: var(--router-ink); }
+:is([data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(.module-router, .product-router .entry-art) { box-shadow: inset 0 0 0 2px var(--spot); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-entry { border-radius: 10px; background: var(--surface); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .entry-art { border-radius: 7px; background: var(--art-voice-bg); color: var(--art-voice-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-agent .entry-art { background: var(--art-agent-bg); color: var(--art-agent-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-router .entry-art { background: var(--art-router-bg); color: var(--art-router-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .entry-capabilities span { border-radius: 4px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-explorer { border-radius: 12px; overflow: hidden; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .explorer-panel {
+  background: var(--card); color: var(--card-ink);
+  --ink: var(--card-ink); --muted-ink: var(--card-muted); --line: var(--card-line); --surface: var(--card); --panel: var(--card);
+  --spot: var(--card-spot); --spot-ink: var(--card-spot-ink);
+}
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .deployment-grid article {
+  padding: 30px; background: var(--card); color: var(--card-ink); border: 1px solid var(--card-line); border-radius: 10px;
+  --ink: var(--card-ink); --muted-ink: var(--card-muted); --line: var(--card-line); --surface: var(--card); --panel: var(--card);
+  --spot: var(--card-spot); --spot-ink: var(--card-spot-ink);
+}
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .deployment-grid h3 { font-size: 29px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(.method-section, .detail-section, .pilot-section) {
+  background: var(--band); color: var(--band-ink);
+  --ink: var(--band-ink); --muted-ink: var(--band-muted); --line: var(--band-line); --surface: var(--band); --panel: var(--band);
+  --spot: var(--band-spot); --spot-ink: var(--band-spot-ink);
+}
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .method-steps h3 { font-size: 34px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .method-steps h3 span { font-size: 18px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .closing-section {
+  background: var(--close); color: var(--close-ink);
+  --ink: var(--close-ink); --muted-ink: var(--close-muted); --line: var(--close-line); --surface: var(--close); --panel: var(--close);
+  --spot: var(--close-spot); --spot-ink: var(--close-spot-ink);
+}
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-hero h1 { font-size: clamp(48px, 4.7vw, 72px); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .feature-records h3 { font-size: 24px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .contact-form { border-radius: 10px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .contact-form :is(input, select, textarea) { border-radius: 5px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .agent-checklist { border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .speech-note { border-radius: 26px; }
+
+/* Illustration colours. Small text uses a pair from the same plate at 4.5:1 or better. */
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-visual {
+  background: var(--viz-bg); border-color: var(--viz-line); color: var(--viz-ink); border-radius: 9px; box-shadow: none;
+}
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(.visual-topline, .visual-footer, .agent-workflow, .routing-tour) { border-color: var(--viz-line); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .voice-orbit::before,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .voice-orbit::after { border-color: var(--viz-line); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .orbit-center { background: var(--viz-fill); color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .orbit-label { background: var(--viz-bg); border-color: var(--viz-line); color: var(--viz-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .audio-lanes > div { background: var(--viz-fill); border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .audio-lanes > div > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .waveform { color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .audio-lanes > div:nth-child(2) { background: var(--viz-fill-2); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .audio-lanes > div:nth-child(2) > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .audio-lanes > div:nth-child(2) .waveform { color: var(--viz-fill-2-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) :is(.visual-insight, .visual-footer, .product-visual .preview-caption, .agent-boundary, .agent-memory, .checklist-caption, .routing-tour > span) { color: var(--viz-muted); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .visual-insight .status-dot,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .agent-goal > svg,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-symbol { color: var(--viz-accent); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .agent-goal > div:nth-child(2) > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-step > div > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-destinations > div > span:last-child { color: var(--viz-muted); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .agent-boundary,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .agent-checklist { border-color: var(--viz-line); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .goal-symbol { background: var(--viz-fill); color: var(--viz-fill-ink); border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-step + .workflow-step { border-top-color: var(--viz-line); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-number { border-color: var(--viz-line); color: var(--viz-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .router-request { background: var(--viz-fill); border-color: var(--viz-line); color: var(--viz-fill-ink); border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .router-connection > span:first-child,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .route-branches::after,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .route-branches i { background: var(--viz-accent); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .route-branches::before { border-bottom-color: var(--viz-accent); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .router-core { background: var(--viz-fill-2); color: var(--viz-fill-2-ink); border-color: var(--viz-line); border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-destinations > div { border-color: var(--viz-line); border-radius: 6px; }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-destinations > div[data-selected="true"] { border-color: var(--viz-accent); background: var(--viz-fill); color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-destinations > div[data-selected="true"] > span:last-child,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .model-destinations > div[data-selected="true"] .model-symbol { color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .speech-preview-lane > span { color: var(--viz-muted); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .speech-note { border-color: var(--viz-line); background: var(--viz-fill); color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .speech-preview-lane:nth-child(2) .speech-note { background: var(--viz-fill-2); border-color: var(--viz-line); color: var(--viz-fill-2-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"] { background: var(--viz-fill); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"] > span > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"][data-state="unchecked"] > span > span,
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"][data-state="checked"] > span > span { color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"]:hover { background: var(--viz-fill-2); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"]:hover > span > span { color: var(--viz-fill-2-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"] svg { color: var(--viz-fill-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .workflow-checklist [data-slot="task-item"]:hover svg { color: var(--viz-fill-2-ink); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-visual .rare-step-player { color: var(--viz-accent); }
+:is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-visual .rare-step-player :is([data-slot="step-player-control"], [data-slot="step-player-track"]) { background: var(--viz-bg); border-color: var(--viz-line); }
+
+@media (max-width: 800px) {
+  :is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .method-steps h3 { font-size: 28px; }
+  :is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-hero h1 { font-size: 64px; }
+}
+@media (max-width: 520px) {
+  :is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .product-hero h1 { font-size: clamp(44px, 12vw, 60px); }
+  :is([data-style="citron"], [data-style="grenadine"], [data-style="tyrian"], [data-style="jasper"], [data-style="slate"]) .feature-records h3 { font-size: 26px; }
+}
+
+/* Shared by Editorial, Studio, and the colour studies. The picture is ink on the page. */
+.ascii-field { padding: 0 var(--gutter) 28px; }
+.ascii-stage {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  transform-origin: 50% 100%;
+  animation: ascii-sway 8.6s ease-in-out infinite;
+}
+.ascii-art {
+  margin: 0;
+  color: var(--ink);
+  background: transparent;
+  font-family: ui-monospace, "Cascadia Mono", "Liberation Mono", "Courier New", monospace;
+  font-size: clamp(3px, 0.386vw, 5.05px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0;
+  white-space: pre;
+  user-select: none;
+  cursor: default;
+}
+.ascii-ch {
+  display: inline-block;
+  width: 1ch;
+  transition: translate 90ms linear;
+}
+.ascii-petal {
+  position: absolute;
+  top: 8%;
+  color: var(--ink);
+  font-family: ui-monospace, "Cascadia Mono", "Liberation Mono", monospace;
+  font-size: clamp(5px, 0.62vw, 8px);
+  line-height: 1;
+  pointer-events: none;
+  animation: ascii-fall linear infinite;
+}
+@keyframes ascii-sway {
+  0%, 100% { transform: rotate(-0.65deg); }
+  50% { transform: rotate(0.65deg); }
+}
+@keyframes ascii-fall {
+  0% { top: 4%; opacity: 0; }
+  10% { opacity: 0.8; }
+  82% { opacity: 0.55; }
+  100% { top: 94%; opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ascii-stage,
+  .ascii-petal { animation: none; }
+  .ascii-art,
+  .ascii-ch { transform: none; translate: none; transition: none; }
+  .ascii-petal { display: none; }
+}

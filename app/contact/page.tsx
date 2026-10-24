@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { ContactPage } from "@/components/site/contact-page";
 import { PageFrame } from "@/components/site/page-frame";
-import { brand } from "@/lib/site-content";
+import { GreekContact } from "@/themes/greek/pages/contact";
+import { DreamContact } from "@/themes/dream/pages";
+import { AthenaContact } from "@/themes/athena/pages";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Start a conversation with ${brand.name}.`,
+  description: "Put Athena on your lines. Contact archit@tryopencomputer.com with your use case and call script.",
 };
 
 export default function ContactRoute() {
   return (
-    <PageFrame>
+    <PageFrame athena={<AthenaContact />} greek={<GreekContact />} dream={<DreamContact />}>
       <ContactPage />
     </PageFrame>
   );

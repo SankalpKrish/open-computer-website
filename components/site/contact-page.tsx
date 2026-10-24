@@ -1,103 +1,25 @@
 "use client";
-
-import { FormEvent, useState } from "react";
+import { type FormEvent, useEffect, useState } from "react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { brand, contact, products } from "@/lib/site-content";
-
 export function ContactPage() {
   const [opened, setOpened] = useState(false);
-
+  const [interest, setInterest] = useState<string>(products[0].name);
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("interest");
+    if (requested && (requested === "Services" || products.some(product => product.name === requested))) setInterest(requested);
+  }, []);
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = event.currentTarget;
-    const data = new FormData(form);
+    const data = new FormData(event.currentTarget);
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     const interest = String(data.get("interest") ?? "").trim();
     const workflow = String(data.get("workflow") ?? "").trim();
     const subject = encodeURIComponent(`${brand.name} — ${interest}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nReply-to: ${email}\nInterest: ${interest}\n\n${workflow}`,
-    );
+    const body = encodeURIComponent(`Name: ${name}\nReply-to: ${email}\nInterest: ${interest}\n\n${workflow}`);
     window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
     setOpened(true);
   }
-
-  return (
-    <section className="px-6 lg:px-12 pt-36 pb-24">
-      <div className="max-w-[900px] mx-auto">
-        <p className="font-mono text-xs tracking-[0.3em] uppercase text-muted-foreground">
-          {brand.name} / Contact
-        </p>
-        <h1 className="font-display text-5xl md:text-7xl mt-6">{contact.title}</h1>
-        <p className="text-lg text-muted-foreground mt-6">{contact.body}</p>
-        <p className="text-sm mt-4">
-          Email{" "}
-          <a className="underline" href={`mailto:${contact.email}`}>
-            {contact.email}
-          </a>
-        </p>
-        <p className="text-sm text-muted-foreground mt-4 max-w-xl">{contact.mailtoNote}</p>
-
-        {opened ? (
-          <p className="mt-16 text-lg">
-            Your email app should have opened a draft to{" "}
-            <a className="underline" href={`mailto:${contact.email}`}>
-              {contact.email}
-            </a>
-            . If it did not, write that address directly. This website did not store the message.
-          </p>
-        ) : (
-          <form onSubmit={onSubmit} className="mt-16 space-y-6">
-            <label className="block">
-              <span className="text-sm">Name</span>
-              <input
-                required
-                name="name"
-                className="mt-2 w-full bg-transparent border border-foreground/20 px-4 py-3"
-              />
-            </label>
-            <label className="block">
-              <span className="text-sm">Email</span>
-              <input
-                required
-                type="email"
-                name="email"
-                className="mt-2 w-full bg-transparent border border-foreground/20 px-4 py-3"
-              />
-            </label>
-            <label className="block">
-              <span className="text-sm">Interest</span>
-              <select
-                name="interest"
-                className="mt-2 w-full bg-background border border-foreground/20 px-4 py-3"
-                defaultValue={products[0].name}
-              >
-                {products.map((product) => (
-                  <option key={product.slug} value={product.name}>
-                    {product.name}
-                  </option>
-                ))}
-                <option value="Services">Services</option>
-              </select>
-            </label>
-            <label className="block">
-              <span className="text-sm">Workflow</span>
-              <textarea
-                required
-                name="workflow"
-                rows={5}
-                className="mt-2 w-full bg-transparent border border-foreground/20 px-4 py-3"
-              />
-            </label>
-            <button
-              type="submit"
-              className="rounded-full bg-foreground text-background px-6 py-3 text-sm"
-            >
-              Open email draft
-            </button>
-          </form>
-        )}
-      </div>
-    </section>
-  );
+  return <section className="contact-layout"><div className="contact-copy"><h1>{contact.title}</h1><p>{contact.body}</p><a className="contact-email" href={`mailto:${contact.email}`}>{contact.email}<ArrowUpRight size={16} aria-hidden="true" /></a><p className="contact-note">{contact.mailtoNote}</p></div>{opened ? <div className="contact-success" role="status"><Check size={30} aria-hidden="true" /><p>Your email app should have opened a draft to <a className="underline" href={`mailto:${contact.email}`}>{contact.email}</a>. If it did not, write that address directly. This website did not store the message.</p><button type="button" className="text-button" onClick={() => setOpened(false)}>Start a conversation</button></div> : <form onSubmit={onSubmit} className="contact-form"><label htmlFor="contact-name">Name<input id="contact-name" required name="name" autoComplete="name" /></label><label htmlFor="contact-email">Email<input id="contact-email" required type="email" name="email" autoComplete="email" /></label><label htmlFor="contact-interest">Interest<select id="contact-interest" name="interest" value={interest} onChange={event => setInterest(event.target.value)}>{products.map((product) => <option key={product.slug} value={product.name}>{product.name}</option>)}<option value="Services">Services</option></select></label><label htmlFor="contact-workflow">Workflow<textarea id="contact-workflow" required name="workflow" rows={5} /></label><button type="submit" className="action-link">Open email draft<ArrowUpRight size={18} aria-hidden="true" /></button></form>}</section>;
 }

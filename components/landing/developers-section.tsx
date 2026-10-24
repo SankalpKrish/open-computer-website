@@ -23,7 +23,7 @@ const features = [
 
 export function DevelopersSection() {
   const [isVisible, setIsVisible] = useState(true);
-  const sectionRef = useRef<HTMLSection>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

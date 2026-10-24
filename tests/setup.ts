@@ -15,7 +15,14 @@ vi.mock("next/link", () => ({
 }));
 
 vi.mock("next/navigation", () => ({
+  usePathname: () => "/",
   notFound: () => {
     throw new Error("notFound");
   },
 }));
+
+// next/font is a compile-time transform; outside Next it resolves to class names only.
+vi.mock("next/font/google", () => {
+  const font = () => ({ className: "", variable: "", style: { fontFamily: "" } });
+  return { Gelasio: font, Jost: font };
+});
